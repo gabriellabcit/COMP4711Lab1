@@ -6,15 +6,10 @@
     </head>
     <body>
         <?php
-        $temp= 'Jim';
-        echo 'Hi, my name is';
-        echo $temp;
-        $temp = 'geek';
-        echo "I am a";
-        echo $temp;
-        $temp = 10;
-        echo 'My level is';
-        echo $temp;
+        $name = 'Jim';
+        $what = 'geek';
+        $level = 10;
+        echo 'Hi, my name is '.$name.', and I am a level '.$level.' '.$what;
         ?>
     </body>
 </html>
