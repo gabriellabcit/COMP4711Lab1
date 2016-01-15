@@ -118,8 +118,9 @@
                 $this->newposition = $this->position;
                 $this->newposition[$which] = 'o';
                 $move = implode($this->newposition);
-                $link = '/?board='.$move;
-                return '<td><a href="http://localhost:4711/COMP4711Lab1'.$link.'">-</a></td>';
+                $url = "http://$_SERVER[SERVER_NAME]".":"."$_SERVER[SERVER_PORT]";
+                $link = '/COMP4711Lab1/?board='.$move;
+                return '<td><a href="'.$url.$link.'">-</a></td>';
             }
             
             /*
